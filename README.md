@@ -22,7 +22,7 @@
 - From the bayesian filter we have, $bel_t(m) = \eta p(y_t|m)bel_{t-1}(m)$
 - Some probability values cannot be calculated due to rounding errors in small values as the range of this function is $[0,1]$
 - Hence we change the range by taking the log odds ratio which calculates the logarithmic ratio of success/probability of failure.
-- This maps the range of $[$$0,1$$]$ $\to$ $[$$-\infin$ , $+\infin$$]$
+- This maps the range of $[0,1]$ $\to$ $[-\infty , +\infty]$
 - So $Logit(p) = log(\frac{p}{1-p})$
 - The final equation we get is $l_{t,i} = logit(p(m^i|y_t)) + l_{t-1,i} - l_{0,i}$
 - $l_{t-1,i}$ - previous belief
